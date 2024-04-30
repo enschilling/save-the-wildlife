@@ -4,7 +4,7 @@ import { getNamespace, getRegionByName } from "./lib/oci.mjs";
 import { checkPodmanMachineRunning, buildImage } from "./lib/container.mjs";
 import { getVersionGradle } from "./lib/gradle.mjs";
 
-const shell = process.env.SHELL | "/bin/zsh";
+const shell = process.env.SHELL | "/bin/bash";
 $.shell = shell;
 $.verbose = false;
 
