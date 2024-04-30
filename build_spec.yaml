@@ -28,7 +28,7 @@ steps:
   - type: Command
     name: "Build ws-server"
     command: |
-      cd scripts && npm install && cd .. && npx zx scripts/build.mjs ws-server
+      npx zx scripts/build.mjs ws-server
   - type: Command
     name: "Build web"
     command: |
