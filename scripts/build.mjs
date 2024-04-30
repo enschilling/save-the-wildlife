@@ -4,7 +4,9 @@ import { getNamespace, getRegionByName } from "./lib/oci.mjs";
 import { checkPodmanMachineRunning, buildImage } from "./lib/container.mjs";
 import { getVersionGradle } from "./lib/gradle.mjs";
 
-const shell = process.env.SHELL | "/bin/bash";
+/** Fix - cloud shell without zsh and not having env variable SHELL **/
+process.env.SHELL = "/bin/bash";
+const shell = process.env.SHELL;
 $.shell = shell;
 $.verbose = false;
 
