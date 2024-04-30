@@ -16,7 +16,7 @@ steps:
     command: |
       yum update -y
       yum install jq -y
-      npm install -g nx
+      npm install -g zx
   - type: Command
     name: "Set up server versions"
     command: |
